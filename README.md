@@ -4,9 +4,22 @@ So you want to start a new rails project using docker? Well here are all the fil
 
 This weird process prevents the need of having to install rails or anything else on to your system to start a new rails app. Instead to creates a container and installs rails and node. You will then use this container to create your project.
 
-Steps:
+##
 
-* Copy repo files into the directory of your desired project.
+### What this contains:
+
+* Ruby 2.3.3
+* Rails 5.1.1
+* Node/npm
+* Yarn
+* Chrome Stable (for testing)
+* Postgres
+
+##
+
+### Getting Started:
+
+* Copy or clone repo files into the directory of your desired project.
 
 * In terminal then run: 
 
@@ -26,7 +39,7 @@ Steps:
 
 * Now `docker-compose up` should get you running your new rails app when you want to start developing
 
-You now have a rails running in a docker container called web. 
+You now have your rails app running in a docker container called web. 
 
 ##
 
@@ -45,6 +58,6 @@ You now have a rails running in a docker container called web.
 
 * If you find that you want different to run all sort of commands on your rails app then you can do the following:
  		
-        docker-compose run web bin/bash
+        docker-compose run web bash
         
-	This will open a command line session inside your web container allowing you to quickly run rake tasks, rails console and use other utils without the need to having to prepend `docker-compose run web` all the time
+	This will open a command line session inside your web container allowing you to quickly run rake tasks, rails console and use other utils without the need of having to prepend `docker-compose run web` all the time
